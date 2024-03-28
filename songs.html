@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gorillaz!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/logo_gorillaz.png?v=1669497073553"
+    />
+    <script
+      src="https://kit.fontawesome.com/990d6163c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/logo_gorillaz.png?v=1669497073553"
+        alt="logo"
+      />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+          <li><a href="songs.html">SONGS</a></li>
+          <li><a href="story.html">STORY</a></li>
+          <li><a href="error.html">MADE BY</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <div class="container">
+      <h5 class="page_title">MUSIC PLAYER</h5>
+      <section class="player-present">
+        <p class="player-present-text">
+          Gorillaz is not only about the visuals! Even some of the masterpieces
+          can not be followed by a complete music video. This's the reason why
+          we want to introduce you "The Grand-i-o-s-eee Music Machine 3000"
+          (a.k.a. "music player")! Be ready to experience the most fascinating
+          sounds ever! ;)
+        </p>
+        <img
+          class="noodle-guitar"
+          src="https://cdn.glitch.global/29e32685-de48-4b07-9cec-c245da8a258c/noodleguitar.png?v=1686062261037"
+        />
+      </section>
+
+      <div class="player">
+        <div class="wrapper">
+          <div class="player-details">
+            <div class="now-playing">PLAYING x OF y</div>
+            <div class="track-art"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+          </div>
+
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="0"
+              class="seek_slider"
+              onchange="seekTo()"
+            />
+            <div class="total-duration">00:00</div>
+          </div>
+
+          <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="99"
+              class="volume_slider"
+              onchange="setVolume()"
+            />
+            <i class="fa fa-volume-up"></i>
+          </div>
+
+          <div class="buttons">
+            <div class="random-track" onclick="randomTrack()">
+              <i class="fa fa-random fa-2x" title="random"></i>
+            </div>
+            <div class="prev-track" onclick="prevTrack()">
+              <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <!--<img class="playpause_btn" src="https://cdn.glitch.global/36cc6f86-fffb-4409-aa1c-6b7a3ce1aebc/circle-play-solid.svg?v=1711633832864">-->
+              <i class="fa-solid fa-circle-play fa-5x"></i>
+            </div>
+            <div class="next-track" onclick="nextTrack()">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+            <div class="repeat-track" onclick="repeatTrack()">
+              <i class="fa fa-repeat fa-2x" title="repeat"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+      <hr class="footer_hr" />
+      <div class="social">
+        <a href="https://www.gorillaz.com/"
+          ><i class="fa-sharp fa-solid fa-basket-shopping"></i
+        ></a>
+        <a href="https://www.youtube.com/@Gorillaz"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://vk.com/gorillazband"
+          ><i class="fa-brands fa-vk"></i
+        ></a>
+        <a href="https://soundcloud.com/gorillaz"
+          ><i class="fa-brands fa-soundcloud"></i
+        ></a>
+      </div>
+      <ul class="link_list">
+        <li>
+          <a href="index.html">Main</a>
+        </li>
+        <li>
+          <a href="songs.html">Songs</a>
+        </li>
+        <li>
+          <a href="story.html">Story</a>
+        </li>
+        <li>
+          <a href="error.html">Made By</a>
+        </li>
+      </ul>
+      <p class="copyright">neonizzzer @ 2022-23</p>
+    </section>
+  </body>
+</html>
