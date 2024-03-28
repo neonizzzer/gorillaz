@@ -1,0 +1,881 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #252525;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  background-color: transparent;
+}
+
+img {
+  background-color: transparent;
+  cursor: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/gorillaz_cursor.png?v=1669751523257),
+    auto;
+}
+
+p {
+  font-family: "Londrina Solid", cursive;
+  font-weight: 300;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+  text-align: center;
+}
+
+iframe {
+  border: 10px solid #edf0f1;
+}
+
+hr {
+  color: #edf0f1;
+}
+
+mark {
+  background-color: #edf0f1;
+  color: #252525;
+}
+
+.page_title {
+  font-family: "Nosifer", cursive;
+  font-weight: 500;
+  font-size: 100px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+/*header*/
+
+.logo {
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+li,
+a {
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  font-size: 40px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 14%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 35px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #04a777;
+}
+
+.footer ul li a {
+  color: #edf0f1;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/*footer*/
+
+.footer .social a {
+  font-size: 34px;
+  color: #edf0f1;
+  border: 1.5px solid #edf0f1;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .social i {
+  background-color: transparent;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer {
+  padding: 40px 0px;
+  min-width: 100%;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.footer_hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*index page*/
+
+.banner {
+  width: 95%;
+  margin: 20px auto 0;
+  margin-bottom: 5px;
+
+  position: center;
+}
+
+.banner img {
+  margin-top: 30px;
+  width: 100%;
+  position: center;
+  border: 10px solid #edf0f1;
+}
+
+.main_cont {
+  text-align: center;
+  margin: 10px;
+}
+
+.card {
+  width: auto;
+  max-width: 1100px;
+  max-height: 850px;
+  position: relative;
+  display: inline-block;
+}
+
+.card img {
+  width: 100%;
+  border: 10px solid #edf0f1;
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.card:hover .img-top {
+  display: inline;
+  opacity: 1;
+}
+
+.container {
+  width: 95%;
+  margin: 20px auto 0;
+  margin-bottom: 5px;
+  display: table;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 10px 0;
+}
+
+.column {
+  display: table-cell;
+  padding: 10px;
+  width: 33.333%;
+  text-align: center;
+}
+
+.column h5 {
+  font-size: 70px;
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  color: #edf0f1;
+}
+
+.group_more {
+  font-size: 70px;
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  color: #edf0f1;
+  margin-bottom: 5px;
+}
+
+.container_story {
+  width: 95%;
+  margin: 20px auto 0;
+  margin-bottom: 5px;
+  position: center;
+}
+
+.main_mark_one {
+  background-color: #04a777;
+  color: #252525;
+  padding: 2px;
+}
+
+.main_mark_two {
+  background-color: #06aed5;
+  color: #252525;
+  padding: 2px;
+}
+
+.discography {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallery {
+  width: 1280px;
+  margin: 70px auto 0;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #f0f0f0;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.gallery .box .img_box {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .box .img_box img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+
+.gallery .box:hover .img_box img {
+  transform: scale(1.2);
+}
+
+.gallery .box .details h2 {
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  font-size: 40px;
+  color: #edf0f1;
+  text-align: center;
+  background-color: transparent;
+}
+
+.gallery .box .details p {
+  background-color: transparent;
+}
+
+.gallery .box .details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.gallery .box:hover .details {
+  opacity: 1;
+}
+
+.gallery .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+}
+
+/*songs page*/
+
+.song_video {
+  padding: 45px 35px;
+  margin-bottom: 40px;
+}
+
+.vid_discrip {
+  padding: 30px 10px;
+  height: 500px;
+}
+
+.float-left {
+  float: left;
+  width: 50% auto;
+  height: 450px auto;
+}
+
+.float-right {
+  float: right;
+  width: 50%;
+  height: 450px auto;
+}
+
+.song_title {
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  font-size: 60px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.song_discrip_r {
+  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  background-color: transparent;
+}
+
+.song_discrip_l {
+  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  background-color: transparent;
+}
+
+.pic_text_right {
+  float: right;
+  position: relative;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.pic_text_left {
+  float: left;
+  position: relative;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.light {
+  width: 750px;
+  height: 550px;
+  background-color: transparent;
+}
+
+.release_l {
+  text-align: left;
+}
+
+/*story page*/
+
+.characters {
+  display: inline;
+  padding: 10%;
+  margin: 20px;
+  max-width: 1000px;
+  position: center;
+}
+
+.char_intro_text {
+  margin: 20px;
+}
+
+.char_preview {
+  max-width: 18%;
+  max-height: 18%;
+  border: 10px solid #edf0f1;
+  margin: 5px;
+  filter: hue-rotate(0%);
+  transition: filter 0.25s;
+}
+
+.char_preview:hover {
+  filter: hue-rotate(210deg);
+}
+
+.bio_char {
+  padding: 45px 35px;
+  margin-bottom: 40px;
+  min-height: 900px;
+  height: auto;
+}
+
+.char_discrip {
+  padding: 30px 10px;
+  height: 500px;
+}
+
+.float-left-char {
+  float: left;
+  width: 50%;
+}
+
+.float-right-char {
+  float: right;
+  width: 30%;
+}
+
+.name_char {
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  font-size: 60px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.bio_text_r {
+  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  background-color: transparent;
+}
+
+.bio_text_l {
+  padding-right: 5px;
+  position: relative;
+
+  transform: translateY(-50%);
+  text-align: left;
+  background-color: transparent;
+}
+
+.pic_bio_right {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.pic_bio_left {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.light_bio {
+  width: 800px;
+  height: 800px;
+  background-color: transparent;
+}
+
+.biogr {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+}
+
+.biogr .name_of_memb {
+  font-family: "Londrina Sketch", cursive;
+  font-weight: 500;
+  font-size: 60px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.biogr p {
+  text-align: justify;
+}
+
+.two_d_bio {
+  height: 900px;
+  float: right;
+  shape-outside: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/twod.png?v=1669663323606);
+  shape-margin: 20px;
+}
+
+.murdoc_bio {
+  height: 900px;
+  float: left;
+  shape-outside: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/murdoc_white_line.png?v=1669749586372);
+  shape-margin: 20px;
+}
+
+.noodle_bio {
+  height: 900px;
+  float: right;
+  shape-outside: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/noodle.png?v=1669663485634);
+  shape-margin: 20px;
+}
+
+.russel_bio {
+  height: 900px;
+  float: left;
+  shape-outside: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/russel.png?v=1669663981259);
+  shape-margin: 20px;
+}
+
+.two_d_mark {
+  background-color: #06aed5;
+  color: #252525;
+  padding: 2px;
+}
+
+.murdoc_mark {
+  background-color: #04a777;
+  color: #252525;
+  padding: 2px;
+}
+
+.noodle_mark {
+  background-color: #d90368;
+  color: #252525;
+  padding: 2px;
+}
+
+.russel_mark {
+  background-color: #fb8b24;
+  color: #252525;
+  padding: 2px;
+}
+
+.empty_div {
+  height: 80px;
+}
+
+/*error page*/
+
+.noodle_img {
+  width: 40%;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom: 0px;
+  float: right;
+}
+
+.error {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.text_under_error {
+  text-align: center;
+}
+
+.e404 {
+  font-family: "Nosifer", cursive;
+  font-weight: 500;
+  font-size: 90px;
+  text-align: center;
+}
+
+h4 {
+  color: transparent;
+  background: linear-gradient(
+    45deg,
+    #04a777,
+    #06aed5,
+    #d90368,
+    #fb8b24,
+    #04a777
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.text_error {
+  display: flex;
+}
+
+.signature {
+  background-color: transparent;
+  bottom: 0px;
+  position: relative;
+  margin: 30px;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  cursor: url(https://cdn.glitch.global/f67bed56-e0b7-4459-bcb3-f9a5b3299e26/gorillaz_cursor.png?v=1669751523257),
+    auto;
+}
+
+.signature:hover {
+  color: #06aed5;
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+
+.error_option {
+  margin-top: 40px;
+}
+
+/*songs page*/
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+}
+
+.wrapper {
+  border: 1px solid transparent;
+  padding: 30px;
+  margin-right: 120px;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+.player-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #fffafa;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /*-moz-box-shadow: 0px 6px 5px black;
+  -webkit-box-shadow: 0px 6px 5px black;
+  box-shadow: 0px 6px 5px black;*/
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  border-radius: 190px;
+}
+
+.now-playing {
+  font-family: "Londrina Solid", cursive;
+  font-size: 2rem;
+}
+
+.track-name {
+  font-family: "Londrina Solid", cursive;
+  font-size: 3.5rem;
+}
+
+.track-artist {
+  font-family: "Londrina Solid", cursive;
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #04a777;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #04a777;
+  cursor: grab;
+  border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  font-family: "Londrina Solid", cursive;
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+  background: transparent;
+}
+i.fa-circle-play,
+i.fa-random,
+i.fa-repeat,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  color: #252525;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.loader {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .stroke {
+  background: #f1f1f1;
+  height: 150%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 5px;
+  animation: animate 1.4s linear infinite;
+}
+
+.noodle-guitar {
+  width: 50%;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+.player-present {
+  margin-top: 0;
+}
+
+.player-present-text {
+  margin-top: 0;
+  padding: 0;
+  margin: 50px;
+  width: 90%;
+  background: transparent;
+  text-align: center;
+}
